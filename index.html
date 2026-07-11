@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azka Azeem — MERN Stack Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Azka Azeem — MERN Stack Developer and UI/UX Designer.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="mark">AZKA AZEEM</div>
+    <div class="bar"><span id="loaderBar"></span></div>
+    <div class="pct" id="loaderPct">0%</div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div id="depth-field">
+    <div class="depth-layer dl-1" data-speed="0.15"></div>
+    <div class="depth-layer dl-2" data-speed="0.3"></div>
+    <div class="depth-layer dl-3" data-speed="0.08"></div>
+  </div>
+  <div class="grain"></div>
+
+  <nav id="nav">
+    <a href="#hero" class="logo">AZKA<span>.</span></a>
+    <ul id="navList">
+      <li><a href="#hero" data-nav>Hero</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Work</a></li>
+      <li><a href="#journey" data-nav>Journey</a></li>
+      <li><a href="#services" data-nav>Services</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow reveal">MERN Stack Developer — UI/UX Designer</div>
+          <h1 class="hero-title reveal">Building interfaces that feel <span class="accent">alive.</span></h1>
+          <p class="hero-sub reveal">I'm Azka Azeem, an O-Levels student and full-stack developer crafting premium,
+            animated web experiences with the MERN stack — from database to pixel.</p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">View Featured Work →</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="frame-mid"></div>
+          <div class="frame-back"></div>
+          <div class="photo-frame" id="photoFrame">
+            <!-- Replace this placeholder with: <img src="your-photo.jpg" alt="Azka Azeem"> -->
+            <div class="photo-placeholder">
+              <img width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#ff7ab8" stroke-width="1.2" src="assets/01- PROFILE PIC.jpg"/>
+              <span class="ph-mono">PHOTO PLACEHOLDER<br>swap in /hero photo/ src</span>
+            </div>
+          </div>
+          <div class="orbit-tag t1">React · Node · Mongo</div>
+          <div class="orbit-tag t2">UI / UX Design</div>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <div class="line"></div>SCROLL TO EXPLORE
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="depth-tag">DEPTH 02 / 09 — ABOUT</div>
+      <div class="wrap about-grid">
+        <div>
+          <div class="eyebrow reveal">About Me</div>
+          <h2 class="section-head reveal" style="margin-bottom:26px;">The developer behind the interface</h2>
+          <div class="about-text">
+            <p class="reveal"><strong>I'm a 13-year-old O-Levels student</strong> with a deep interest in full-stack web
+              development and interface design. What started as curiosity about how websites work turned into building
+              complete applications — from database schema to animated front-ends.</p>
+            <p class="reveal">I work primarily in the <strong>MERN stack</strong> — MongoDB, Express, React, and Node —
+              alongside TypeScript and Supabase, and I care just as much about how something feels to use as how it's
+              built underneath.</p>
+            <p class="reveal">My goal is to keep building real, functional products while sharpening both my engineering
+              and design instincts — with an eye on freelance work, internships, and eventually a career at the
+              intersection of development and design.</p>
+          </div>
+        </div>
+        <div class="specs glass reveal">
+          <dl>
+            <dt>Name</dt>
+            <dd>Azka Azeem</dd>
+            <dt>Status</dt>
+            <dd>O-Levels Student</dd>
+            <dt>Focus</dt>
+            <dd>MERN Stack Development</dd>
+            <dt>Also</dt>
+            <dd>UI / UX Design</dd>
+            <dt>Open to</dt>
+            <dd>Internships · Freelance</dd>
+            <dt>Stack</dt>
+            <dd>React · Node · MongoDB</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="depth-tag">DEPTH 03 / 09 — SKILLS</div>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow reveal">Skills</div>
+          <h2 class="reveal">A stack built end to end</h2>
+          <p class="reveal">From styling and animation to servers and databases — grouped by where each skill lives in
+            the build.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card glass reveal">
+            <span class="cat-label">Frontend</span>
+            <h3>Interface & Animation</h3>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript
+                (ES5/ES6)</span><span>TypeScript</span><span>React.js</span><span>React +
+                TS</span><span>Bootstrap</span><span>Tailwind CSS</span><span>GSAP</span><span>EJS</span>
+            </div>
+          </div>
+          <div class="skill-card glass reveal">
+            <span class="cat-label">Backend</span>
+            <h3>Server & Data</h3>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mongoose</span><span>SQL</span><span>NoSQL</span><span>Supabase</span>
+            </div>
+          </div>
+          <div class="skill-card glass reveal">
+            <span class="cat-label">Tools & Practice</span>
+            <h3>Workflow & Design</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span><span>UI/UX Design</span><span>Responsive Design</span><span>Component
+                Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="depth-tag">DEPTH 04 / 09 — WORK</div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Featured Projects</div>
+      <h2 class="reveal">Selected exhibits</h2>
+      <p class="reveal">Seven full-stack builds spanning community platforms, e-commerce, LMS systems, and productivity tools.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#ff2e88;top:-20px;left:-20px;"></div>
+        <img src="./assets/06- FIX MY AREA.png" alt="Fix My Area project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 01</span>
+        <h3>Fix My Area</h3>
+        <p>A community reporting platform for Pakistan where users can report local issues like broken roads, garbage, water and electricity problems. Other users vote on reports, and the highest-voted issues get priority for authorities to review and resolve.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/Fix-My-Area-For-PK">GitHub</a><a href="https://fix-my-area-for-pk-xsl7.vercel.app/">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#ff7ab8;bottom:-20px;right:-20px;"></div>
+        <img src="./assets/02- PET ACCESSORIE.png" alt="Pet Accessories Store project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 02</span>
+        <h3>Pet Accessories Store</h3>
+        <p>A modern e-commerce website where users can browse and purchase pet accessories such as food, toys, collars, grooming products, and other pet essentials.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/Pet-Accessories-Store-">GitHub</a><a href="https://azkaazeem.github.io/Pet-Accessories-Store-/">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#b6006f;top:30%;left:20%;"></div>
+        <img src="./assets/03- SAYLANI HUB.png" alt="Saylani Hub project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 03</span>
+        <h3>Saylani Hub</h3>
+        <p>A complete learning management system where students explore and apply to courses online. After admin approval, each student receives a CNIC-based roll number, submits leave requests, while admins manage students, approve applications, add courses, and monitor attendance.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Supabase</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/MODULE03_HACKATHON">GitHub</a><a href="https://module-03-hackathon.vercel.app/">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#ff2e88;top:-20px;left:-20px;"></div>
+        <img src="./assets/04- AIRBNB CLONE.png" alt="Airbnb Clone project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 04</span>
+        <h3>Airbnb Clone</h3>
+        <p>A full-stack accommodation booking platform where users can browse listings, view property details, and book available places online.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/DELTA_PROJECT">GitHub</a><a href="https://delta-project-chmye3djs-azka-azeems-projects.vercel.app/listings">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#ff7ab8;bottom:-20px;right:-20px;"></div>
+        <img src="./assets/05- EXPENSE TRACKER.png" alt="Expense Tracker project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 05</span>
+        <h3>Expense Tracker</h3>
+        <p>A digital wallet application inspired by online banking. Users can securely send money to other users, manage their balance, and view complete transaction history.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/FRONTEND_LAST_ASSIGNMENT">GitHub</a><a href="https://frontend-last-assignment.vercel.app/">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#b6006f;top:30%;left:20%;"></div>
+        <img src="./assets/07- POST APP.png" alt="Post App project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 06</span>
+        <h3>Post App</h3>
+        <p>A social media application where authenticated users can create, edit, delete, and manage posts, while other users can browse shared content.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Supabase</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/Javascript-Mini-Hackathon">GitHub</a><a href="https://azkaazeem.github.io/Javascript-Mini-Hackathon/">Live Demo</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual glass reveal">
+        <div class="glow" style="background:#ff2e88;top:-20px;left:-20px;"></div>
+        <img src="./assets/08- TRELLO.png" alt="Trello Clone project preview">
+      </div>
+      <div class="reveal">
+        <span class="p-num">EXHIBIT 07</span>
+        <h3>Trello Clone</h3>
+        <p>A task management application where users can create boards, add tasks, organize them into columns (To Do, In Progress, Done), and manage their workflow efficiently.</p>
+        <div class="project-meta"><span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        <div class="project-links"><a href="https://github.com/Azkaazeem/Trello-Application">GitHub</a><a href="https://trello-application-one.vercel.app/">Live Demo</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ============ EXPERIENCE / JOURNEY ============ -->
+    <section id="journey">
+      <div class="depth-tag">DEPTH 05 / 09 — JOURNEY</div>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow reveal">Experience & Learning Journey</div>
+          <h2 class="reveal">How I got here</h2>
+          <p class="reveal">A timeline of the skills and projects that shaped my stack.</p>
+        </div>
+        <div class="timeline">
+          <div class="t-item reveal">
+            <span class="t-date">Foundation</span>
+            <h3>Started with HTML, CSS & JavaScript</h3>
+            <p>Learned the fundamentals of the web — structure, styling, and interactivity — while balancing O-Levels
+              coursework.</p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date">Frontend Growth</span>
+            <h3>Moved into React, TypeScript & Animation</h3>
+            <p>Built component-driven interfaces with React and React TypeScript, styled with Tailwind and Bootstrap,
+              and brought them to life with GSAP.</p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date">Going Full-Stack</span>
+            <h3>Learned Node.js, Express & MongoDB</h3>
+            <p>Extended into backend development — building APIs, structuring databases with Mongoose, and connecting
+              real data to real interfaces.</p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date">Applied Projects</span>
+            <h3>Shipped the Pet Store, Dashboard & Clone builds</h3>
+            <p>Applied the full stack to real projects — an e-commerce store, a Supabase-powered dashboard, and a
+              pixel-accurate UI clone.</p>
+          </div>
+          <div class="t-item reveal">
+            <span class="t-date">Now</span>
+            <h3>Refining UI/UX & building this portfolio</h3>
+            <p>Focused on sharpening design sense alongside engineering — and presenting both through a portfolio built
+              to match.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services">
+      <div class="depth-tag">DEPTH 06 / 09 — SERVICES</div>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow reveal">Services</div>
+          <h2 class="reveal">What I can build for you</h2>
+          <p class="reveal">Focused offerings suited to internships, freelance projects, and collaborations.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass reveal">
+            <span class="idx">01</span>
+            <h3>Frontend Development</h3>
+            <p>Responsive, animated interfaces built with React, Tailwind, and GSAP — pixel-accurate and
+              performance-conscious.</p>
+          </div>
+          <div class="service-card glass reveal">
+            <span class="idx">02</span>
+            <h3>Full-Stack MERN Apps</h3>
+            <p>End-to-end applications — from MongoDB schema design to Express APIs to a finished React front-end.</p>
+          </div>
+          <div class="service-card glass reveal">
+            <span class="idx">03</span>
+            <h3>UI / UX Design</h3>
+            <p>Interface design focused on clarity, hierarchy, and a premium feel — from layout to micro-interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="testimonials">
+      <div class="depth-tag">DEPTH 07 / 09 — TESTIMONIALS</div>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow reveal">Testimonials</div>
+          <h2 class="reveal">What people say</h2>
+          <p class="reveal">Placeholder quotes — ready to be replaced with real feedback as it comes in.</p>
+        </div>
+        <div class="test-grid">
+          <div class="test-card glass reveal">
+            <span class="placeholder-flag">Placeholder</span>
+            <div class="quote-mark">"</div>
+            <p>Azka brings a rare mix of technical skill and design sense for someone still in school — this space is
+              ready for a real quote.</p>
+            <div class="test-person">
+              <div class="test-avatar"></div>
+              <div>
+                <div class="name">Mentor Name</div>
+                <div class="role">Teacher / Mentor</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card glass reveal">
+            <span class="placeholder-flag">Placeholder</span>
+            <div class="quote-mark">"</div>
+            <p>Clean code, thoughtful UI, and fast turnaround — swap this in once you have client or collaborator
+              feedback.</p>
+            <div class="test-person">
+              <div class="test-avatar"></div>
+              <div>
+                <div class="name">Client Name</div>
+                <div class="role">Freelance Client</div>
+              </div>
+            </div>
+          </div>
+          <div class="test-card glass reveal">
+            <span class="placeholder-flag">Placeholder</span>
+            <div class="quote-mark">"</div>
+            <p>A dependable collaborator who understands both the frontend and backend sides of a project equally well.
+            </p>
+            <div class="test-person">
+              <div class="test-avatar"></div>
+              <div>
+                <div class="name">Collaborator Name</div>
+                <div class="role">Project Partner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="depth-tag">DEPTH 08 / 09 — CONTACT</div>
+      <div class="wrap contact-grid">
+        <div>
+          <div class="eyebrow reveal">Contact</div>
+          <h2 class="reveal" style="font-size:clamp(2rem,3.8vw,2.8rem);">Let's build something together.</h2>
+          <p class="reveal" style="color:var(--muted);margin-top:16px;max-width:420px;">Open to internships, freelance
+            projects, and collaboration opportunities. Reach out through the form or directly below.</p>
+          <div class="contact-links reveal">
+            <a href="mailto:youremail@example.com">Email <span class="small">youremail@example.com</span></a>
+            <a href="#" target="_blank" rel="noopener">GitHub <span class="small">Your projects & code</span></a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn <span class="small">Professional profile</span></a>
+          </div>
+        </div>
+        <form class="form glass reveal" onsubmit="return false;">
+          <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your name"
+              required></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email"
+              placeholder="you@example.com" required></div>
+          <div class="field"><label for="message">Message</label><textarea id="message"
+              placeholder="Tell me about your project or opportunity..." required></textarea></div>
+          <p class="form-note">Note: this form is a front-end placeholder — connect it to a backend or a service like
+            Formspree to receive messages.</p>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <h2>Ready to bring your idea to depth.</h2>
+        <div class="foot-links">
+          <a href="#hero">Hero</a>
+          <a href="#projects">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Azka Azeem — All rights reserved.</span>
+        <span>Designed & built with GSAP, glass, and depth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
